@@ -19,8 +19,8 @@
 ## 2. Git Repository & Commit Verification
 **Dedicated GitHub Repository URL:** [**CCCS 106: Laboratory Worksheet - CSPC Scholarship Intake Portal: Multi-Tier Form Validation & Defensive Programming in Flet**](https://github.com/edborja/Laboratory-Worksheet)  
 
-**Repository Visibility** [Public /CSPC Organization] (Github Settings, change pic message in parenthesis be remove later)
-![GitHub Visibility](enter path of pic)
+**Repository Visibility** [Public /CSPC Organization] (Github Settings, change pic message in parenthesis be remove later)  
+![GitHub Visibility](Screenshots/{insert_screenshots})
 
 **Final Verified Commit SHA on `main`:** [Paste 7-character or 40-character commit hash, e.g., a1b2c3d]
 
@@ -33,11 +33,11 @@ insert output
 
 ## 4. Verification Screenshots
 **A. Multi-Field Validation Error State (Matching Figure 1)**
-(Ensure red error borders, error descriptions, and red SnackBar are clearly visible)
+(Ensure red error borders, error descriptions, and red SnackBar are clearly visible)  
 ![Validation Error Screenshot]({Screenshots/{insert_screenshots}])
 
 **B. Successful Application Registration State (Matching Figure 2)**
-(Ensure clean form fields. Green SnackBar, and the session contract card are clearly visible)
+(Ensure clean form fields. Green SnackBar, and the session contract card are clearly visible)  
 ![Successful Registration Screenshot]({Screenshots/{insert_screenshots}})
 
 ## 5. Technical Reflection & Engineering Audit
