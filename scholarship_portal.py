@@ -20,7 +20,7 @@ import flet as ft
 # ===========================================================================
 
 class ScholarshipValidationError(Exception):
-  """Base exception for all scholarship domain validation errors/"""
+  """Base exception for all scholarship domain validation errors."""
   pass
 
 
@@ -222,7 +222,6 @@ def main(page: ft.Page):
   def submit_application(e):
     has_errors = False
 
-
     # Reset all error states before evaluation
     name_field.error = None
     id_field.error = None
@@ -292,7 +291,7 @@ def main(page: ft.Page):
         shape=ft.RoundedRectangleBorder(radius=8)
       ),
       height=48,
-      on_click=ft.RoundedRectangleBorder(radius=8)
+      on_click=submit_application
     )
 
     page.add(

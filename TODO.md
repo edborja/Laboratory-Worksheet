@@ -1,10 +1,3 @@
-## Classes
-- [] ScholarshipValidationError
-- [] IDFormatError
-- [] EmailDomainError
-- [] GWARangeError
-
-
 ## Class Functions
 `Class`
 >- [] validate_student_id
