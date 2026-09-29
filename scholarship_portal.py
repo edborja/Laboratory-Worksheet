@@ -3,7 +3,6 @@ CCS 106: Application Development and Emerging Technologies
 Week 5: Laboratory Task: CSPC Scholarship Intake Portal
 Instructor: Allan O. Ibo, Jr., MSc
 
-Target Framework: Flet (Python 3.12+)
 """
 
 import re
@@ -13,11 +12,6 @@ from dataclasses import dataclass, field
 from datetime import datetime
 from typing import Optional
 import flet as ft
-
-
-# ===========================================================================
-# TIER 3: DOMAIN DATA CONTRACT & CUSTOM EXCEPTIONS
-# ===========================================================================
 
 class ScholarshipValidationError(Exception):
     """Base exception for all scholarship domain validation errors."""
@@ -51,17 +45,11 @@ class ScholarshipApplicant:
     submitted_at: datetime = field(default_factory=datetime.now)
 
 
-# ===========================================================================
-# TIER 2: VALIDATION ENGINE
-# ===========================================================================
-
 class ScholarshipValidator:
-    """Encapsulated validation rules and regex logic for scholarship applicants."""
-
-    # Hyphen at the end to prevent unintended regex character range mapping
     NAME_REGEX = re.compile(r"^[A-Za-z\s.',-]{2,60}$")
-    STUDENT_ID_REGEX = re.compile(r"^20\d{2}-\d{4,5}$")
-    CSPC_EMAIL_REGEX = re.compile(r"^[a-zA-Z0-9._%+-]+@cspc\.edu\.ph$")
+    # Allows either 7 consecutive digits (e.g., 2412863) OR hyphenated format (e.g., 2024-0123)
+    STUDENT_ID_REGEX = re.compile(r"^(?:\d{7}|20\d{2}-\d{4,5})$")
+    CSPC_EMAIL_REGEX = re.compile(r"^[a-zA-Z0-9._%+-]+@(my\.)?cspc\.edu\.ph$")
 
     @classmethod
     def sanitize_string(cls, raw: Optional[str]) -> str:
@@ -83,7 +71,7 @@ class ScholarshipValidator:
         if not clean:
             raise IDFormatError("Student ID is required.")
         if not cls.STUDENT_ID_REGEX.match(clean):
-            raise IDFormatError("Invalid Student ID format (e.g., 2024-0123).")
+            raise IDFormatError("Invalid Student ID format (e.g., 2321674 or 2024-0123).")
         return clean
 
     @classmethod
@@ -122,12 +110,7 @@ class ScholarshipValidator:
         return gwa_val
 
 
-# ===========================================================================
-# TIER 1: FLET PRESENTATION LAYER
-# ===========================================================================
-
 def main(page: ft.Page):
-    # Configure Window Properties Safely
     try:
         if hasattr(page, "window") and page.window is not None:
             page.window.width = 620
@@ -358,7 +341,6 @@ def main(page: ft.Page):
     )
 
 if __name__ == "__main__":
-    # Version-agnostic launcher (supports both modern ft.run and legacy ft.app)
     if hasattr(ft, "run"):
         ft.run(main)
     elif hasattr(ft, "app"):
