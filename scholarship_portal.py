@@ -99,10 +99,31 @@ class ScholarshipValidator:
     """
 
     # TODO: Implement ID validation using cls.STUDENT_ID_REGEX
-    pass
+    clean = cls.sanitize_string(value)
+    if not clean:
+      raise IDFormatError("Student ID is required.")
+    if not cls.STUDENT_ID_REGEX.match(clean):
+      raise IDFormatError("Invalid Student ID. Expected format: YYYY-NNNN (e.g., 2024-0123).")
+    return clean
 
   @classmethod
   def validate_email(cls, value: Optional[str]) -> str:
+    """
+    Validates institutional CSPC email address.
+    Returns: Lowercased, sanitized small.
+    Raises: EmailDomainError if invalid.
+    """
+
+    # TODO: Implement email validation using cls.CSPC_EMAIL_REGEX
+    clean = cls.sanitize_string(value.lower())
+    if not clean:
+      raise EmailDomainError("Institutional email is requierd.")
+    if not cls.CSPC_EMAIL_REGEX.match(clean):
+      raise EmailDomainError("Institutional email required (must end with @cspc.edu.ph).")
+    return clean
+
+  @classmethod
+  def validate_phone(cls, value: Optional[str]) -> str:
     """
     Validates and standardizes Philippine mobile numbers to 09XXXXXXXXX.
     Returns: Normalized 11-digit phone string.
@@ -110,7 +131,14 @@ class ScholarshipValidator:
     """
 
     # TODO: Implement phone validation using cls.PH_PHONE_REGEX
-    pass
+    clean = cls.sanitize_string(value.replace(" ", "").replace("-", ""))
+    if not clean:
+      raise ScholarshipValidationError("Mobile number is required.")
+    if not cls.PH_PHONE_REGEX.match(clean):
+      raise ScholarshipValidationError("Invalid mobile number. Expected 09XXXXXXXXX or +639XXXXXXXXX.")
+    if clean.startswith("+63"):
+      clean = "0" + clean[3:]
+    return clean
 
   @classmethod
   def validate_gwa(cls, value: Optional[str]) -> str:
@@ -121,7 +149,14 @@ class ScholarshipValidator:
     """
 
     # TODO: Implement defensive float parsing and range check
-    pass
+    clean = cls.sanitize_string(value)
+    try:
+      gwa_float = float(clean)
+    except (ValueError, TypeError):
+      raise GWARangeError("GWA must be a valid number between 1.00 and 5.00.")
+    if gwa_float < 1.00 or gwa_float > 5.00:
+      raise GWARangeError("GWA must be between 1.00 and 5.00.")
+    return round(gwa_float, 2)
 
 
 

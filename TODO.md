@@ -1,8 +1,9 @@
 ## Class Functions
 `Class`
->- [] validate_student_id
->- [] validate_email
->- [] validate_gwa
+>- [X] validate_student_id
+>- [X] validate_email
+>- [X] validate_phone
+>- [X] validate_gwa
 
 ## submit_application clean up
 - [] validate student id
