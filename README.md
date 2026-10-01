@@ -19,7 +19,7 @@
 ## 2. Git Repository & Commit Verification
 **Dedicated GitHub Repository URL:** [**CCCS 106: Laboratory Worksheet - CSPC Scholarship Intake Portal: Multi-Tier Form Validation & Defensive Programming in Flet**](https://github.com/edborja/Laboratory-Worksheet)  
 
-**Repository Visibility** [Public /CSPC Organization] (Github Settings, change pic message in parenthesis be remove later)  
+**Repository Visibility** Public
 ![GitHub Visibility](Screenshots/GitHub_Visibility.png)
 
 **Final Verified Commit SHA on `main`:** [Paste 7-character or 40-character commit hash, e.g., a1b2c3d]
@@ -59,7 +59,7 @@ OK
 ![Successful Registration Screenshot](Screenshots/Success.png)
 
 ## 5. Technical Reflection & Engineering Audit
-**Defensive Error Handling:** [In 1-2 sentences, explain how the team’s code prevents GUI crashes when non-numeric or malformed GWA inputs are entered.]  
+**Defensive Error Handling:** 
 `Member 1:`  
 *The program uses try-except to safely handle invalid GWA input. It shows an error message and stops the submission instead of crashing.*  
 
@@ -69,7 +69,7 @@ OK
 `Member 3:`  
 *[insert answers here]*
 
-**Multi-Tier Separation:** [In 1-2 sentences, explain why client-side Flet error clearing alone does not replace domain-tier validation.]  
+**Multi-Tier Separation:**
 `Member 1:`  
 *Clearing the error message only changes what the user sees. Domain validation is still needed to check the data and stop invalid applications from being saved.*
 
@@ -79,7 +79,7 @@ OK
 `Member 3:`  
 *[insert answers here]*
 
-**Team Collaboration Reflection:** [In 1-2 sentences, describe how your team coordinated branch merges, code reviews, or pairing to complete the validation pipeline.]  
+**Team Collaboration Reflection:** 
 `Member 1:`  
 *We worked on the Flet interface while the other members worked on validation and testing. We combined our work on GitHub and used tests to check that everything worked.* 
 
