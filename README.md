@@ -63,7 +63,7 @@ OK
 `Member 1:`  
 *[insert answers here]*  
 `Member 2:`  
-*[insert answers here]*  
+*The use of try except code in our program helps deal with the error in case of the conversion of the GWA from string to number when a letter or an invalid number is input.*  
 `Member 3:`  
 *[insert answers here]*
 
@@ -72,7 +72,7 @@ OK
 *[insert answers here]*
 
 `Member 2:`  
-*[insert answers here]*
+*Deleting of the error text only clears it from the display for better interaction with the form but does not perform any validation since we require domain validation to ensure that incorrect data is not saved into the applicant list.*
 
 `Member 3:`  
 *[insert answers here]*
@@ -81,6 +81,6 @@ OK
 `Member 1:`  
 *[insert answers here]*  
 `Member 2:`  
-*[insert answers here]*  
+*We decided to split up the tasks by assigning one member to work on the front end and another to define the rules for validation. Later, we combined the code through our repository on GitHub.*  
 `Member 3:`  
 *[insert answers here]*
