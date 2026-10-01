@@ -67,7 +67,7 @@ OK
 *The use of try except code in our program helps deal with the error in case of the conversion of the GWA from string to number when a letter or an invalid number is input.*  
 
 `Member 3:`  
-*[insert answers here]*
+*We use the try except in our program that would raise an exception when an error is detected. This will prevent the UI to crush when an invalid input has been entered.*
 
 **Multi-Tier Separation:**  
 `Member 1:`  
@@ -77,7 +77,7 @@ OK
 *Deleting of the error text only clears it from the display for better interaction with the form but does not perform any validation since we require domain validation to ensure that incorrect data is not saved into the applicant list.*
 
 `Member 3:`  
-*[insert answers here]*
+*Error clearing text only allows the user to have repeated attempts, to ensure that no error occurs during registration. Domain Validation ensures that no errors actually happened, prompting the user to try again, this ensure that no faulty data is inside the databse.*
 
 **Team Collaboration Reflection:**   
 `Member 1:`  
@@ -87,4 +87,4 @@ OK
 *We decided to split up the tasks by assigning one member to work on the front end and another to define the rules for validation. Later, we combined the code through our repository on GitHub.*  
 
 `Member 3:`  
-*[insert answers here]*
+*We split up the task, for a more efficient approach. We created our own respective branches and push our own work their, and merge it to the main branch once the program is running smoothly.*
