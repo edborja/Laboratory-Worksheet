@@ -59,7 +59,7 @@ OK
 ![Successful Registration Screenshot](Screenshots/Success.png)
 
 ## 5. Technical Reflection & Engineering Audit
-**Defensive Error Handling:** 
+**Defensive Error Handling:**   
 `Member 1:`  
 *The program uses try-except to safely handle invalid GWA input. It shows an error message and stops the submission instead of crashing.*  
 
@@ -69,7 +69,7 @@ OK
 `Member 3:`  
 *[insert answers here]*
 
-**Multi-Tier Separation:**
+**Multi-Tier Separation:**  
 `Member 1:`  
 *Clearing the error message only changes what the user sees. Domain validation is still needed to check the data and stop invalid applications from being saved.*
 
@@ -79,7 +79,7 @@ OK
 `Member 3:`  
 *[insert answers here]*
 
-**Team Collaboration Reflection:** 
+**Team Collaboration Reflection:**   
 `Member 1:`  
 *We worked on the Flet interface while the other members worked on validation and testing. We combined our work on GitHub and used tests to check that everything worked.* 
 
