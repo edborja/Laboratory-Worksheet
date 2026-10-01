@@ -141,7 +141,11 @@ def main(page: ft.Page):
         prefix_icon=get_icon("PERSON_OUTLINE", "person_outline"),
         border_radius=8,
         width=580,
-        bgcolor=ft.Colors.GREY_800
+        fill_color=ft.Colors.GREY_600,
+        color=ft.Colors.WHITE_70,
+        label_style=ft.TextStyle(
+            color=ft.Colors.WHITE_70
+        )
     )
 
     id_field = ft.TextField(
@@ -150,7 +154,11 @@ def main(page: ft.Page):
         prefix_icon=get_icon("BADGE_OUTLINED", "badge_outlined"),
         border_radius=8,
         width=580,
-        bgcolor=ft.Colors.GREY_800
+        fill_color=ft.Colors.GREY_600,
+        color=ft.Colors.WHITE_70,
+        label_style=ft.TextStyle(
+            color=ft.Colors.WHITE_70
+        )
     )
 
     email_field = ft.TextField(
@@ -159,7 +167,11 @@ def main(page: ft.Page):
         prefix_icon=get_icon("EMAIL_OUTLINED", "email_outlined"),
         border_radius=8,
         width=580,
-        bgcolor=ft.Colors.GREY_800
+        fill_color=ft.Colors.GREY_600,
+        color=ft.Colors.WHITE_70,
+        label_style=ft.TextStyle(
+            color=ft.Colors.WHITE_70
+        )
     )
 
     phone_field = ft.TextField(
@@ -168,7 +180,11 @@ def main(page: ft.Page):
         prefix_icon=get_icon("PHONE_OUTLINED", "phone_outlined"),
         border_radius=8,
         width=580,
-        bgcolor=ft.Colors.GREY_800
+        fill_color=ft.Colors.GREY_600,
+        color=ft.Colors.WHITE_70,
+        label_style=ft.TextStyle(
+            color=ft.Colors.WHITE_70
+        )
     )
 
     gwa_field = ft.TextField(
@@ -177,13 +193,19 @@ def main(page: ft.Page):
         prefix_icon=get_icon("NUMBERS_OUTLINED", "numbers_outlined"),
         border_radius=8,
         width=580,
-        bgcolor=ft.Colors.GREY_800
+        fill_color=ft.Colors.GREY_600,
+        color=ft.Colors.WHITE_70,
+        label_style=ft.TextStyle(
+            color=ft.Colors.WHITE_70
+        )
     )
 
     Opt = getattr(ft, "DropdownOption", getattr(getattr(ft, "dropdown", None), "Option", None))
     program_dropdown = ft.Dropdown(
         label="Scholarship Program",
         hint_text="Select your scholarship grant",
+        fill_color=ft.Colors.GREY_600,
+        filled=True,
         border_radius=8,
         options=[
             Opt("CHED Tulong Dunong Program (TDP)"),
@@ -192,7 +214,10 @@ def main(page: ft.Page):
             Opt("UniFAST Tertiary Education Subsidy (TES)")
         ] if Opt else [],
         width = 580,
-        bgcolor=ft.Colors.GREY_800,
+        color=ft.Colors.WHITE_70,
+        label_style=ft.TextStyle(
+            color=ft.Colors.WHITE_70
+        )
     )
 
     status_summary = ft.Text(
