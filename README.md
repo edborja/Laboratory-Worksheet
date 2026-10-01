@@ -20,7 +20,7 @@
 **Dedicated GitHub Repository URL:** [**CCCS 106: Laboratory Worksheet - CSPC Scholarship Intake Portal: Multi-Tier Form Validation & Defensive Programming in Flet**](https://github.com/edborja/Laboratory-Worksheet)  
 
 **Repository Visibility** [Public /CSPC Organization] (Github Settings, change pic message in parenthesis be remove later)  
-![GitHub Visibility](Screenshots/GitHub_Visibility.png)
+![GitHub Visibility](https://drive.google.com/file/d/1vdrWqIOiMZwCpzusNWUknRgA0W5ajJfQ/view)
 
 **Final Verified Commit SHA on `main`:** [Paste 7-character or 40-character commit hash, e.g., a1b2c3d]
 
