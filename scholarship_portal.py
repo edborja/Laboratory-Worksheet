@@ -139,35 +139,45 @@ def main(page: ft.Page):
         label="Full Name",
         hint_text="e.g., Maria Clara Santos",
         prefix_icon=get_icon("PERSON_OUTLINE", "person_outline"),
-        border_radius=8
+        border_radius=8,
+        width=580,
+        bgcolor=ft.Colors.GREY_800
     )
 
     id_field = ft.TextField(
         label="Student ID Number",
         hint_text="e.g., 2024-0123",
         prefix_icon=get_icon("BADGE_OUTLINED", "badge_outlined"),
-        border_radius=8
+        border_radius=8,
+        width=580,
+        bgcolor=ft.Colors.GREY_800
     )
 
     email_field = ft.TextField(
         label="Institutional Email",
         hint_text="e.g., name@cspc.edu.ph",
         prefix_icon=get_icon("EMAIL_OUTLINED", "email_outlined"),
-        border_radius=8
+        border_radius=8,
+        width=580,
+        bgcolor=ft.Colors.GREY_800
     )
 
     phone_field = ft.TextField(
         label="Mobile Phone",
         hint_text="e.g., 09123456789",
         prefix_icon=get_icon("PHONE_OUTLINED", "phone_outlined"),
-        border_radius=8
+        border_radius=8,
+        width=580,
+        bgcolor=ft.Colors.GREY_800
     )
 
     gwa_field = ft.TextField(
         label="GWA",
         hint_text="e.g., 1.25",
         prefix_icon=get_icon("NUMBERS_OUTLINED", "numbers_outlined"),
-        border_radius=8
+        border_radius=8,
+        width=580,
+        bgcolor=ft.Colors.GREY_800
     )
 
     Opt = getattr(ft, "DropdownOption", getattr(getattr(ft, "dropdown", None), "Option", None))
@@ -180,7 +190,9 @@ def main(page: ft.Page):
             Opt("DOST Science & Technology Scholarship"),
             Opt("CSPC Institutional Academic Scholarship"),
             Opt("UniFAST Tertiary Education Subsidy (TES)")
-        ] if Opt else []
+        ] if Opt else [],
+        width = 580,
+        bgcolor=ft.Colors.GREY_800,
     )
 
     status_summary = ft.Text(
@@ -307,6 +319,11 @@ def main(page: ft.Page):
         height=48,
         on_click=submit_application
     )
+
+    if len(approved_applicants) > 0:
+        for i in approved_applicants:
+            pass        
+        pass
 
     page.add(
         ft.Column(
