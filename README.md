@@ -60,27 +60,27 @@ OK
 
 ## 5. Technical Reflection & Engineering Audit
 **Defensive Error Handling:** [In 1-2 sentences, explain how the team’s code prevents GUI crashes when non-numeric or malformed GWA inputs are entered.]  
-`Member 1 [to be change]`  
+`Member 1:`  
 *[insert answers here]*  
-`Member 2 [to be change]`  
+`Member 2:`  
 *[insert answers here]*  
-`Member 3 [to be change]`  
+`Member 3:`  
 *[insert answers here]*
 
 **Multi-Tier Separation:** [In 1-2 sentences, explain why client-side Flet error clearing alone does not replace domain-tier validation.]  
-`Member 1 [to be change]:`  
+`Member 1:`  
 *[insert answers here]*
 
-`Member 2 [to be change]:`  
+`Member 2:`  
 *[insert answers here]*
 
-`Member 3 [to be change]`  
+`Member 3:`  
 *[insert answers here]*
 
 **Team Collaboration Reflection:** [In 1-2 sentences, describe how your team coordinated branch merges, code reviews, or pairing to complete the validation pipeline.]  
-`Member 1 [to be change]`  
+`Member 1:`  
 *[insert answers here]*  
-`Member 2 [to be change]`  
+`Member 2:`  
 *[insert answers here]*  
-`Member 3 [to be change]`  
+`Member 3:`  
 *[insert answers here]*
