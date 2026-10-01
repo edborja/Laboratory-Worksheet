@@ -152,7 +152,11 @@ class TestScholarshipValidator(unittest.TestCase):
     # ------------------------------------------------------------------------
     def test_gui_submission_flow(self):
         from unittest.mock import MagicMock
-        import flet as ft
+        # Load the optional GUI dependency at runtime so the validation tests
+        # remain importable in environments where Flet is not installed.
+        import importlib
+
+        ft = importlib.import_module("flet")
         import scholarship_portal
 
         mock_page = MagicMock()

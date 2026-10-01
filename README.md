@@ -1,18 +1,18 @@
-# CCS 106 - Group Laboratory Task Submission: Form Validation & Defensive Programming
+# CCCS 106: Laboratory Worksheet - CSPC Scholarship Intake Portal: Multi-Tier Form Validation & Defensive Programming in Flet
 
 ---
 
 ## 1. Group & Team Members Roster
 **Group Name / Number:** Group No. 2 (Ni-Git)  
 **Year & Section:** BSCS 3A  
-**Date of Submission:** [2026-10-01] (to be change)  
+**Date of Submission:** [2026-10-01]   
 **Submitting Member:** Borja, Edmar B.  
 
 |Role/Order|Full Name|Student ID Number|Institutional Email|Key Technical Contribution|
 |:---|:---|:---|:---|:---|
-|`Member 1 [to be change]`|Borja, Edmar B.|2411445|`[cspc email]`|`[insert contribution]`|
-|`Member 2 [to be change]`|Barandon, Noelee Anthony S.|2411445|`[cspc email]`|`[insert contribution]`|
-|`Member 3 [to be change]`|Musa, Edurado Gabriel S.|2411445|`[cspc email]`|`[insert contribution]`|
+|`Member 1`|Borja, Edmar B.|2411445|`edborja@my.cspc.edu.ph`|`Developer 1 (Lead UI)`|
+|`Member 2`|Barandon, Noelee Anthony S.|2412863|`nonoelee@my.cspc.edu.ph`|`Developer 2 (State Logic)`|
+|`Member 3`|Musa, Edurado Gabriel S.|2411276|`edmusa@my.edu.ph`|`Developer 3 QA & Milestone`|
 
 ---
 
