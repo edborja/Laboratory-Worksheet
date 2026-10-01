@@ -28,41 +28,59 @@
 Run the `python test_validation.py -v` in your terminal and paste the full output bellow:
 
 ```text
-insert output
+test_dataclass_contract_creation (__main__.TestScholarshipValidator.test_dataclass_contract_creation) ... ok
+test_gui_submission_flow (__main__.TestScholarshipValidator.test_gui_submission_flow) ... ok
+test_invalid_email_domain (__main__.TestScholarshipValidator.test_invalid_email_domain) ... ok
+test_invalid_gwa_non_numeric (__main__.TestScholarshipValidator.test_invalid_gwa_non_numeric) ... ok
+test_invalid_gwa_out_of_bounds (__main__.TestScholarshipValidator.test_invalid_gwa_out_of_bounds) ... ok
+test_invalid_name_empty (__main__.TestScholarshipValidator.test_invalid_name_empty) ... ok
+test_invalid_name_length_and_symbols (__main__.TestScholarshipValidator.test_invalid_name_length_and_symbols) ... ok
+test_invalid_phone_numbers (__main__.TestScholarshipValidator.test_invalid_phone_numbers) ... ok
+test_invalid_student_id_format (__main__.TestScholarshipValidator.test_invalid_student_id_format) ... ok
+test_valid_email (__main__.TestScholarshipValidator.test_valid_email) ... ok
+test_valid_gwa (__main__.TestScholarshipValidator.test_valid_gwa) ... ok
+test_valid_name (__main__.TestScholarshipValidator.test_valid_name) ... ok
+test_valid_phone_normalization (__main__.TestScholarshipValidator.test_valid_phone_normalization) ... ok
+test_valid_student_id (__main__.TestScholarshipValidator.test_valid_student_id) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 0.157s
+
+OK
 ```
 
 ## 4. Verification Screenshots
 **A. Multi-Field Validation Error State (Matching Figure 1)**
 (Ensure red error borders, error descriptions, and red SnackBar are clearly visible)  
-![Validation Error Screenshot]({Screenshots/{insert_screenshots}])
+![Validation Error Screenshot](Screenshots/Error.png)
 
 **B. Successful Application Registration State (Matching Figure 2)**
 (Ensure clean form fields. Green SnackBar, and the session contract card are clearly visible)  
-![Successful Registration Screenshot]({Screenshots/{insert_screenshots}})
+![Successful Registration Screenshot](Screenshots/Success.png)
 
 ## 5. Technical Reflection & Engineering Audit
 **Defensive Error Handling:** [In 1-2 sentences, explain how the team’s code prevents GUI crashes when non-numeric or malformed GWA inputs are entered.]  
-`Member 1 [to be change]`  
+`Member 1:`  
 *[insert answers here]*  
-`Member 2 [to be change]`  
-*[insert answers here]*  
-`Member 3 [to be change]`  
+`Member 2:`  
+*The use of try except code in our program helps deal with the error in case of the conversion of the GWA from string to number when a letter or an invalid number is input.*  
+`Member 3:`  
 *[insert answers here]*
 
 **Multi-Tier Separation:** [In 1-2 sentences, explain why client-side Flet error clearing alone does not replace domain-tier validation.]  
-`Member 1 [to be change]:`  
+`Member 1:`  
 *[insert answers here]*
 
-`Member 2 [to be change]:`  
-*[insert answers here]*
+`Member 2:`  
+*Deleting of the error text only clears it from the display for better interaction with the form but does not perform any validation since we require domain validation to ensure that incorrect data is not saved into the applicant list.*
 
-`Member 3 [to be change]`  
+`Member 3:`  
 *[insert answers here]*
 
 **Team Collaboration Reflection:** [In 1-2 sentences, describe how your team coordinated branch merges, code reviews, or pairing to complete the validation pipeline.]  
-`Member 1 [to be change]`  
+`Member 1:`  
 *[insert answers here]*  
-`Member 2 [to be change]`  
-*[insert answers here]*  
-`Member 3 [to be change]`  
+`Member 2:`  
+*We decided to split up the tasks by assigning one member to work on the front end and another to define the rules for validation. Later, we combined the code through our repository on GitHub.*  
+`Member 3:`  
 *[insert answers here]*
