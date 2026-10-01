@@ -61,15 +61,17 @@ OK
 ## 5. Technical Reflection & Engineering Audit
 **Defensive Error Handling:** [In 1-2 sentences, explain how the team’s code prevents GUI crashes when non-numeric or malformed GWA inputs are entered.]  
 `Member 1:`  
-*[insert answers here]*  
+*The program uses try-except to safely handle invalid GWA input. It shows an error message and stops the submission instead of crashing.*  
+
 `Member 2:`  
 *The use of try except code in our program helps deal with the error in case of the conversion of the GWA from string to number when a letter or an invalid number is input.*  
+
 `Member 3:`  
 *[insert answers here]*
 
 **Multi-Tier Separation:** [In 1-2 sentences, explain why client-side Flet error clearing alone does not replace domain-tier validation.]  
 `Member 1:`  
-*[insert answers here]*
+*Clearing the error message only changes what the user sees. Domain validation is still needed to check the data and stop invalid applications from being saved.*
 
 `Member 2:`  
 *Deleting of the error text only clears it from the display for better interaction with the form but does not perform any validation since we require domain validation to ensure that incorrect data is not saved into the applicant list.*
@@ -79,8 +81,10 @@ OK
 
 **Team Collaboration Reflection:** [In 1-2 sentences, describe how your team coordinated branch merges, code reviews, or pairing to complete the validation pipeline.]  
 `Member 1:`  
-*[insert answers here]*  
+*We worked on the Flet interface while the other members worked on validation and testing. We combined our work on GitHub and used tests to check that everything worked.* 
+
 `Member 2:`  
 *We decided to split up the tasks by assigning one member to work on the front end and another to define the rules for validation. Later, we combined the code through our repository on GitHub.*  
+
 `Member 3:`  
 *[insert answers here]*
